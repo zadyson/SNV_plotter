@@ -19,9 +19,6 @@ library(ggplot2)
 # zoe.dyson@lshtm.ac.uk last updated Aug 20 2017
 #
 # TO DO:
-#       - reshape the summary table to be counts for
-#         each type and location and add in ratios
-#         for each
 #       - work out why the second plot
 #         (commented out) crashes the pdf, or change
 #         to ggplot
@@ -39,24 +36,23 @@ library(ggplot2)
 #
 #-----Example parameters:---------
 #
+#    working_dir_path <- "/Users/zdyson/Dropbox/Folder/15052017_QC_Script"
 #
-#working_dir_path <- "/Users/zoedyson/Dropbox/Scripts/Het_Hom_Sanger_QC/cross_check_with_reddog/"
+#    vcf_path <- "vcf"
 #
-#vcf_path <- "/Users/zoedyson/Dropbox/Scripts/Het_Hom_Sanger_QC/cross_check_with_reddog/vcf/"
+#    ids <- c("20087_8#59","20087_8#60","20087_8#63",
+#         "20087_8#64","20087_8#68","20087_8#69",
+#         "20087_8#70","20087_8#72")
 #
-#ids <- c("9870_8#73","10071_8#91","10540_1#17", "10561_2#28","10608_2#23","10608_2#25",
-#         "10608_2#43","10608_2#44","11642_2#13","11642_2#15","11642_2#16","11642_2#69",
-#         "12045_3#70","12045_3#75")
+#    ref_id <- "AL513382"
 #
-#ref_id <- "AL513382"
+#    ref_genome_path <- "test_data_reference/Typhi_CT18.gbk.fasta"
 #
-#ref_genome_path <- "/Users/zoedyson/Dropbox/IMPORTANT_ANALYSIS_FILES_DO_NOT_EDIT/het_hom_vcf/Typhi_CT18.gbk.fasta"
-#
-#excluded_regions_path <- "/Users/zoedyson/Dropbox/IMPORTANT_ANALYSIS_FILES_DO_NOT_EDIT/typhi_recombination_and_phage_regions/CT18_final_repeats_phage_forParseSNPTable.csv"
+#    excluded_regions_path <- "test_data_excluded_regions/CT18_final_repeats_phage_forParseSNPTable.csv"
 #
 #--------To run:------------------
 #
-#    plot_hets(working_dir_path, ids, ref_id, ref_genome_path, excluded_regions_path)
+#    plot_hets(working_dir_path, vcf_path, ids, ref_id, ref_genome_path, excluded_regions_path)
 #
 #--------------------------------
 
