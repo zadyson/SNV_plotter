@@ -13,3 +13,6 @@ A simplified plotting script similar to this which can summarise GHRU vcf files 
 ![image](https://user-images.githubusercontent.com/8507671/144292933-4795321d-68d1-43dd-a8d5-ddf5bd431e18.png)
 
 ![image](https://user-images.githubusercontent.com/8507671/144292977-129cdfbf-9788-46f3-a525-8b9f42385793.png)
+
+## How do I run it?
+** Please refer to instructions in the header of each script and make sure you have the relevant packages installed (see library(X) commands).
